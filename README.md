@@ -1,0 +1,1 @@
+# kadai3_memo
