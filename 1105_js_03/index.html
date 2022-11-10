@@ -1,0 +1,77 @@
+
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myMemoPad</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6ca38c9040.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+    <h1>クラシック曲 記録帳</h1>
+    </header>
+
+    <main>
+        <dl class="form-inner">
+            <!-- 曲名、できれば作品番号まで記載する旨を -->
+            <dt class="form-title">曲名</dt>
+            <dd class="form-item"><input type="text" name="name" id="song-title" class="form-parts"></dd>
+            <!--  -->
+            <dt class="form-title">作曲家</dt>
+            <dd class="form-item"><input type="text" name="name"  id="composer" class="form-parts"></dd>                      
+            <!--  -->
+            <dt class="form-title">年代</dt>
+            <select class="form-item" id="song-age">
+                <option value="バロック">バロック</option>
+                <option value="古典">古典</option>
+                <option value="ロマン">ロマン</option>
+                <option value="近現代">近現代</option>
+            </select>            
+            <!--  -->
+            <dt class="form-title">難易度</dt>
+            <select class="form-item" id="level">
+                <option value="1 beginner">1 beginner</option>
+                <option value="2 elementary">2 elementary</option>
+                <option value="3 intermediate">3 intermediate</option>
+                <option value="4 advanced">4 advanced</option>
+                <option value="5 professional ">5 professional</option>
+            </select>
+        </dl>
+
+            <!--  -->
+            <!-- <input type="text" id="key"> -->
+
+        <!-- <textarea id="memo"></textarea> -->
+
+
+        <div id="button_piano">
+            <button id="save" type="button">Save</button>
+            <button id="clear" type="button">Clear</button>
+        </div>
+        <!-- <ul>
+            <li id="save">Save</li>
+            <li id="clear">Clear</li>
+        </ul> -->
+    </main>
+
+    <table id="list">
+        <th>曲名</th>
+        <th>作曲家</th>
+        <th>年代</th>
+        <th>難易度</th>
+    <!-- ここに追加データが挿入される -->
+    </table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/js_1105.js"></script>
+
+</body>
+</html>
