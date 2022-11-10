@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>カレンダー</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <!-- xxxx年xx月を表示 -->
+            <h1 id="header"></h1>
+        
+            <!-- ボタンクリックで月移動 -->
+            <div id="next-prev-button">
+                <button id="prev">‹</button>
+                <button id="next">›</button>
+            </div>
+        
+            <!-- カレンダー -->
+            <div id="calendar"></div>
+        </div>
+        <div id="popup-wrapper">
+            <div id="popup-inside">
+              <div id="close">x</div>
+              <div id="message">
+                <h2>入力してください</h2>
+                <textarea id="text" class="text" cols="70" rows="7"></textarea>
+                <!-- <div id="myMap"></div> -->
+              </div>
+              <div class="button_area">
+                <button id="start" class="speech_buttons">Start</button>
+                <button id="stop" class="speech_buttons">Stop</button>
+                <button id="save" class="speech_buttons">Save</button>
+              </div>
+            </div>
+          </div>
+    </main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/diary_memo_js_1105.js"></script>
+
+</body>
+</html>
